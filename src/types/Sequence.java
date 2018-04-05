@@ -1,4 +1,5 @@
 package types;
+import java.util.Arrays;
 
 public class Sequence<T> extends Packet {
 	
@@ -32,7 +33,7 @@ public class Sequence<T> extends Packet {
 	}
 	
 	public String toString(){
-		return super.toString() + " Sequence: [channelNr=" + m_channelNr + ", unit=" + m_unit + ", resolution=" + m_resolution + " buffer = "+m_buffer+"]";
+		return super.toString() + " Sequence: [channelNr=" + m_channelNr + ", unit=" + m_unit + ", resolution=" + m_resolution + " buffer = "+Arrays.toString(m_buffer)+"]";
 	}
 
 }
