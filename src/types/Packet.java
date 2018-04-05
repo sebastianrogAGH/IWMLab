@@ -1,6 +1,6 @@
 package types;
 
-public class Packet {
+abstract public class Packet {
 	protected String m_device;
 	protected String m_description;
 	protected long m_date;

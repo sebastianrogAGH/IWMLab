@@ -1,16 +1,10 @@
 package types;
-import types.Packet;
+import types.Sequence;;
 
 public class TypesTester {
 	public static void main(String[] args) {
-		Packet testPack = new Packet("testDev","testDescr",100);
-		System.out.println(testPack);
-		Packet testPackDate = new Packet("testDev2","testDescr2",0);
-		System.out.println("date -> "+testPackDate.toString());
-		Packet testPackSimple = new Packet("simple");
-		System.out.println("simple -> "+testPackSimple.toString());
-		Packet testPackEmpty = new Packet();
-		System.out.println("empty -> "+testPackEmpty.toString());
+		Sequence<Integer> testSeq = new Sequence<Integer>("testDev","testDescr",0, 1, "u", 0.5, null);
+		System.out.println(testSeq);
 	}
 
 }
